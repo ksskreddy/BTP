@@ -2,11 +2,11 @@
 ## Objective
 Clustering of similar motions  in the given “Bharatanatyam” dance video.
 ### Input 
-. The video was given in RGB format
+* The video was given in RGB format
 
-. Annotation file with motion frame details.
+* Annotation file with motion frame details.
 ### Output
-. Cluster number for each motion
+* Cluster number for each motion
 
 ## Dataset Description
 
@@ -147,34 +147,34 @@ Clustering of similar motions  in the given “Bharatanatyam” dance video.
 
 ## Challenges
 
-. All the motions  didn’t  have  same no of frames even the similar ones.
+* All the motions  didn’t  have  same no of frames even the similar ones.
 
-. Also the frames of similar motions may be different.
+* Also the frames of similar motions may be different.
 
-. To compare similarity of two motions,need to find a good measure.
+* To compare similarity of two motions,need to find a good measure.
 
-. The similarity measure should be more for similar motions and less for different motions
+* The similarity measure should be more for similar motions and less for different motions
 
-. It should be able to compare motions with different no of frames
+* It should be able to compare motions with different no of frames
 
 ## Overview of approaches
 
 ### Unsupervised Learning
 
-. Used Dense optical flow and obtained the feature vector of each motion.
+* Used Dense optical flow and obtained the feature vector of each motion.
 
-  . Tried various variations using HOF 
+  * Tried various variations using HOF 
   
-. Applied DTW  as similarity measure for motions and obtained similarity matrix.
+* Applied DTW  as similarity measure for motions and obtained similarity matrix.
 
-. Used Spectral Clustering to cluster the data using the above similarity matrix.
+* Used Spectral Clustering to cluster the data using the above similarity matrix.
 
 ### Supervised Learning
 
-. Used Dense optical flow to get the features for each motion.
+* Used Dense optical flow to get the features for each motion.
 
-. Made all vectors equal size by appending with small value(1e-5)
+* Made all vectors equal size by appending with small value(1e-5)
 
-. Used SVM for the classification
+* Used SVM for the classification
 
 

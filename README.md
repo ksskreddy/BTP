@@ -145,6 +145,36 @@ Clustering of similar motions  in the given “Bharatanatyam” dance video.
   </tr>
 </table>
 
+## Challenges
 
+. All the motions  didn’t  have  same no of frames even the similar ones.
+
+. Also the frames of similar motions may be different.
+
+. To compare similarity of two motions,need to find a good measure.
+
+. The similarity measure should be more for similar motions and less for different motions
+
+. It should be able to compare motions with different no of frames
+
+## Overview of approaches
+
+### Unsupervised Learning
+
+. Used Dense optical flow and obtained the feature vector of each motion.
+
+  . Tried various variations using HOF 
+  
+. Applied DTW  as similarity measure for motions and obtained similarity matrix.
+
+. Used Spectral Clustering to cluster the data using the above similarity matrix.
+
+### Supervised Learning
+
+. Used Dense optical flow to get the features for each motion.
+
+. Made all vectors equal size by appending with small value(1e-5)
+
+. Used SVM for the classification
 
 

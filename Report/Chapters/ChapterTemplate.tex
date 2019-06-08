@@ -1,0 +1,97 @@
+% Chapter Template
+
+\chapter{Chapter Title Here} % Main chapter title
+
+\label{ChapterX} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter X. \emph{Chapter Title Here}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Main Section 1}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{Subsection 1}
+
+Nunc posuere quam at lectus tristique eu ultrices augue venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus sodales tortor eget quam adipiscing in vulputate ante ullamcorper. Sed eros ante, lacinia et sollicitudin et, aliquam sit amet augue. In hac habitasse platea dictumst.
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\subsection{Subsection 2}
+Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque. Cras in elit neque, quis varius elit. Phasellus fringilla, nibh eu tempus venenatis, dolor elit posuere quam, quis adipiscing urna leo nec orci. Sed nec nulla auctor odio aliquet consequat. Ut nec nulla in ante ullamcorper aliquam at sed dolor. Phasellus fermentum magna in augue gravida cursus. Cras sed pretium lorem. Pellentesque eget ornare odio. Proin accumsan, massa viverra cursus pharetra, ipsum nisi lobortis velit, a malesuada dolor lorem eu neque.
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Main Section 2}
+
+Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. Donec pellentesque justo a massa fringilla non vestibulum metus vestibulum. Vestibulum in orci quis felis tempor lacinia. Vivamus ornare ultrices facilisis. Ut hendrerit volutpat vulputate. Morbi condimentum venenatis augue, id porta ipsum vulputate in. Curabitur luctus tempus justo. Vestibulum risus lectus, adipiscing nec condimentum quis, condimentum nec nisl. Aliquam dictum sagittis velit sed iaculis. Morbi tristique augue sit amet nulla pulvinar id facilisis ligula mollis. Nam elit libero, tincidunt ut aliquam at, molestie in quam. Aenean rhoncus vehicula hendrerit.
+
+
+\paragraph{Literature Survey}
+
+This is a sample. Write about referred papers. Cite like this \citep{nip2010cyclic}. Another example would be this \citep{nip2010extremely}. More citations like this \citep{bird2004evaluating}, \citep {tremblay2003seismic} and \citep {alhamaydeh2016key}.
+
+\paragraph{Research gaps}
+Typically include research gaps for your study. 
+\paragraph{Objective}
+Similarly objectives of study. 
+\paragraph{Scope}
+Define scope of study. 
+\paragraph{An algorithm}
+How you could refer to figures: This is an example. (Refer \ref{fig5}). You can add equations like this Eq. (\ref{eq1})
+\begin{equation}
+\label{eq1}
+  SDR = sd(T) - \sum_{i}\frac{{T}_{i}}{|T|}\times sd({T}_{i})
+\end{equation}
+
+\begin{figure}[]
+\centering
+\includegraphics[height=7cm]{splits.png}
+\caption{Splitting of the input space (X1 x X2) by M5' model tree algorithm}
+\label{fig5}
+\end{figure}
+
+\section{Adding another section}
+You can show a lot of figures together like these Figures \ref{fig61}, \ref{fig62}, \ref{fig63} below.
+\begin{figure} [!htbp]
+\centering    
+\subfigure[Caption1]{\label{fig61}\includegraphics[width=42mm]{data1.png}}
+\subfigure[Caption2]{\label{fig62}\includegraphics[width=42mm]{data2.png}}
+\subfigure[Caption3]{\label{fig63}\includegraphics[width=42mm]{data3.png}}
+\caption{Figures sample}
+\end{figure}
+You can add lists into the text like this. 
+\begin{itemize}
+\settowidth{\leftmargin}{{\Large$\square$}}\advance\leftmargin\labelsep
+\itemsep3pt\relax
+\renewcommand\labelitemi{{\lower1pt\hbox{\small$\square$}}}
+\item	Some sample text item 1. 
+\item You may refer to tables \ref{tab1} 
+\item Or figures \ref{fig61}
+\end{itemize}
+
+Tables can be added like this
+\begin{table}[!htbp]
+\centering
+\caption{Sample table}
+\label{tab1}
+\begin{tabular}{llll}
+
+\hline
+Column 1 & Column 2 & Column 3       \\\hline
+1         & Data1 & 13.41179 & 0.9492839 \\
+2            & Data2 & 13.39824 & 0.9492952\\\hline
+\end{tabular}
+\end{table}
+
+
